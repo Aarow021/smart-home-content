@@ -3,12 +3,17 @@
     <head>
         <meta charset="UTF-8">
         <title>SmartHome+</title>
+        <style>
+            .prevent-select {
+                user-select: none; /* Standard syntax */
+            }
+        </style>
     </head>
-    <body background="images/bg-yellow.png">
+    <body background="images/bg-yellow.png" class="prevent-select">
         <header>
             <nav>
                 <a href="home.html">Home</a>
-                <a href="appliances.html">Appliances</a>
+                <a href="conveniences.html">Conveniences</a>
                 <a href="entertainment.html">Entertainment</a>
                 <a href="security.html">Security</a>
             </nav>
@@ -17,10 +22,10 @@
         <main>
             <p>
                 There is a house with no equal in sight, and that house is for sale <strong>now!</strong><br>
-                With cutting-edge <a href="appliances.html">appliances</a>, infalliable <a href="security.html">security</a>, and endless <a href="entertainment.html">entertainment</a>, this smart house could be yours!
+                With cutting-edge <a href="conveniences.html">appliances</a>, infalliable <a href="security.html">security</a>, and endless <a href="entertainment.html">entertainment</a>, this smart house could be yours!
             </p>
             <figure>
-                <img src="images/smart-house-edited.png" width="300" alt="Smart house exterior" draggable="true">
+                <img src="images/smart-house-edited.png" width="300" alt="Smart house exterior">
                 <figcaption>Outside view of smart house</figcaption>
             </figure>
             <p>
@@ -33,5 +38,9 @@
             </p>
             
         </main>
+        <hr>
+        <footer>
+            <a href="privacy-policy.html">Privacy policy</a>
+        </footer>
     </body>
 </html>
