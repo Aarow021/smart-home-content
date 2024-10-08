@@ -1,0 +1,124 @@
+
+@import url('https://fonts.googleapis.com/css?family=Vazirmatn');
+@import url('https://fonts.googleapis.com/css?family=Zilla Slab');
+
+:root {
+    --color1: #3A81FF;
+    --color2: #B1E629;
+    --grey: #D9D9D9;
+}
+
+* { 
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 2rem;
+    font-family: 'Zilla Slab';
+}
+
+header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: black;
+    height: 10vh;
+}
+
+header nav {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+header nav a {
+    display: flex;
+    height: 80%;
+    margin-left: 5%;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li a{
+    display: block;
+    padding: 1.5em;
+    font-family: 'Zilla Slab';
+    font-size: 2rem;
+    color: #3A81FF;
+    text-decoration: none;
+}
+
+p, li {
+    font-family: 'Vazirmatn';
+}
+
+.active {
+    color: var(--color2);
+}
+
+#hero {
+    display: flex;
+    background-image: url('images/smart-house-hd.jfif');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+#hero-content {
+    color: white;
+    font-family: '';
+    font-size: 4rem;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top:2rem
+}
+
+main section {
+    margin-top: 1rem;
+}
+
+#specs {
+    display: flex;
+    width: 80%;
+    border-radius: 25px;
+    background-color: var(--grey);
+}
+
+#specs img {
+    width: 50%;
+    border-radius: 25px;
+}
+
+#specs div {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-left: 5%;
+    width: 40%;
+    justify-content: center;
+}
+
+#specs div h2 {
+    text-align: center;
+}

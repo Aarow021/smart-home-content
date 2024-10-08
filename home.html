@@ -3,44 +3,77 @@
     <head>
         <meta charset="UTF-8">
         <title>SmartHome+</title>
-        <style>
-            .prevent-select {
-                user-select: none; /* Standard syntax */
-            }
-        </style>
+        <link rel="stylesheet" href="app.css">
     </head>
-    <body background="images/bg-yellow.png" class="prevent-select">
+    <body>
         <header>
             <nav>
-                <a href="home.html">Home</a>
-                <a href="conveniences.html">Conveniences</a>
-                <a href="entertainment.html">Entertainment</a>
-                <a href="security.html">Security</a>
+                <a href="home.html">
+                    <img src="images/house-icon.png" alt="Home navigation">
+                </a>
+                <ul>
+                    <li><a href="conveniences.html">Conveniences</a></li>
+                    <li><a href="entertainment.html">Entertainment</a></li>
+                    <li><a href="security.html">Security</a></li>
+                </ul>
             </nav>
-            <h1>SmartHome+</h1>
         </header>
+        <section id="hero">
+            <h1 id="hero-content">Home<br>Reimagined</h1>
+        </section>
         <main>
-            <p>
-                There is a house with no equal in sight, and that house is for sale <strong>now!</strong><br>
-                With cutting-edge <a href="conveniences.html">appliances</a>, infalliable <a href="security.html">security</a>, and endless <a href="entertainment.html">entertainment</a>, this smart house could be yours!
-            </p>
-            <figure>
-                <img src="images/smart-house-edited.png" width="300" alt="Smart house exterior">
-                <figcaption>Outside view of smart house</figcaption>
-            </figure>
-            <p>
-                Unlike most homes, <em>this house has a brain!</em><br>
-                All of the smart devices are controlled by a central mind, ensuring the seamless integration of appliances into the house.
-            </p>
-            <p>
-                For those who want some peace and quiet, this house is perfect!<br>
-                As all of the surrounding buildings are unpopulated, there is not a single person around to disturb you.
-            </p>
-            
+            <section id="specs">
+                <img src="images/back-exterior.png" alt="Back exterior view of house">
+                <div>
+                    <h2>More than just a home: A Smart Home</h2>
+                    <p>This house includes:</p>
+                    <ul>
+                        <li>4 Beds</li>
+                        <li>2.5 Baths</li>
+                        <li>2 Floors + Attic</li>
+                        <li>2 Cellars</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="brain-banner">
+                <img id="brain-1" src="images/white-brain.png" alt="Circuit brain">
+                <h2>Unlike most homes, this house has a <span>brain</span>!</h2>
+                <p>All of the smart devices are controlled by a central mind, ensuring the seamless integration of appliances into the house.</p>
+                <img id="brain-1" src="images/white-brain.png" alt="Circuit brain">
+            </section>
+            <section id="info-cards">
+                <article>
+                    <h2>Entertainment</h2>
+                    <p>Check out some of the many entertainment options offered</p>
+                    <a href="entertainment.html">
+                        <button>Entertainment</button>
+                    </a>
+                </article>
+                <article>
+                    <h2>Conveniences</h2>
+                    <p>Take a look at a few machines that make life a little easier</p>
+                    <a href="conveniences.html">
+                        <button>Conveniences</button>
+                    </a>
+                </article>
+                <article>
+                    <h2>Security</h2>
+                    <p>Discover a number of security features that is employed in the house</p>
+                    <a href="security.html">
+                        <button>Security</button>
+                    </a>
+                </article>
+            </section>
         </main>
-        <!-- <hr>
         <footer>
-            <a href="privacy-policy.html">Privacy policy</a>
-        </footer> -->
+            <section id="footer-links">
+                <p id="bottom">
+                    <a href="#bottom">About</a> • <a href="#bottom">Contact</a> • <a href="#bottom">Privacy</a>
+                </p>
+            </section>
+            <section id="copyright">
+                <p>©2024 Aaron Wright</p>
+            </section>
+        </footer>
     </body>
 </html>
