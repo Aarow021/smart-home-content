@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 
 img {
     max-width: 100%;
-    object-fit: cover;
+    object-fit:cover;
 }
 
 header {
@@ -31,7 +31,6 @@ header {
     position: sticky;
     top: 0;
     background-color: black;
-    height: 10vh;
 }
 
 header nav {
@@ -41,13 +40,27 @@ header nav {
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-around;
-
 }
 
-header nav a {
+header > nav > a {
     display: flex;
     height: 80%;
     margin-left: 5%;
+    width: 100px;
+}
+
+.home-logo {
+    background-image: url("images/house-icon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -100vw;
+    width: 50px;
+    margin-right: 0.6rem;
+}
+
+header > nav > a > img {
+    height: 100%;
 }
 
 header nav ul {
@@ -58,7 +71,7 @@ header nav ul {
 
 header nav ul li a{
     display: block;
-    padding: 1.5em;
+    padding: 1rem;
     font-family: 'Zilla Slab';
     font-size: 2rem;
     color: #3A81FF;
@@ -83,7 +96,7 @@ p, li {
 .row {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .wrap {
@@ -94,6 +107,10 @@ p, li {
     text-align: center;
 }
 
+.full {
+    width: 100%;
+}
+
 .thirds article {
     width: 30%;
 }
@@ -101,6 +118,17 @@ p, li {
 .cards article {
     box-shadow: var(--card-shadow);
     align-items: center;
+}
+
+.card {
+    box-shadow: var(--card-shadow);
+    border-radius: 20px;
+}
+
+.card.row img {
+ width: 50%;
+ border-radius: 20px;
+ 
 }
 
 .cards article img {
@@ -152,26 +180,24 @@ main {
     align-items: center;
 }
 
-main section {
+main section, main div {
     margin-top: 2rem;
 }
 
 #specs {
     display: flex;
     width: 85%;
-    border-radius: 25px;
     background-color: var(--grey);
 }
 
-#specs img {
+#specs div {
     width: 50%;
     border-radius: 25px;
 }
 
-#specs div {
+#specs section {
     display: flex;
     flex-flow: column nowrap;
-    margin-left: 5%;
     width: 40%;
     justify-content: center;
     text-align: center;
@@ -190,9 +216,7 @@ main section {
 #brain-banner {
     display: flex;
     background-color: var(--color1);
-    flex-wrap: nowrap row;
     align-items: center;
-    width: 100%
 }
 
 #info-cards article {

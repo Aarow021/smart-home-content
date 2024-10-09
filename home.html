@@ -8,10 +8,12 @@
     <body>
         <header>
             <nav>
-                <a href="home.html">
-                    <img src="images/house-icon.png" alt="Home navigation">
-                </a>
                 <ul>
+                    <li>
+                        <a class="home-logo" href="home.html">
+                            Home
+                        </a>
+                    </li>
                     <li><a href="conveniences.html">Conveniences</a></li>
                     <li><a href="entertainment.html">Entertainment</a></li>
                     <li><a href="security.html">Security</a></li>
@@ -22,9 +24,9 @@
             <h1 id="hero-content">Home<br>Reimagined</h1>
         </section>
         <main>
-            <section id="specs" class="card">
+            <div id="specs" class="card row">
                 <img src="images/back-exterior.png" alt="Back exterior view of house">
-                <div>
+                <section>
                     <h2>More than just a home: A Smart Home</h2>
                     <p>This house includes</p>
                     <ul>
@@ -33,16 +35,20 @@
                         <li>2 Floors + Attic</li>
                         <li>2 Cellars</li>
                     </ul>
-                </div>
-            </section>
-            <section id="brain-banner">
-                <img id="brain-1" src="images/white-brain.png" alt="Circuit brain">
+                </section>
+            </div>
+            <div id="brain-banner" class="row full">
                 <div>
+                    <img src="images/white-brain.png" alt="Circuit brain">
+                </div>
+                <section>
                     <h2 class="text-center">Unlike most homes, this house has a <span>brain</span>!</h2>
                     <p class="text-center">All of the smart devices are controlled by a central mind, ensuring the seamless integration of appliances into the house.</p>
+                </section>
+                <div>
+                    <img src="images/white-brain.png" alt="Circuit brain">
                 </div>
-                <img id="brain-1" src="images/white-brain.png" alt="Circuit brain">
-            </section>
+            </div>
             <section id="info-cards" class="row thirds cards">
                 <article>
                     <img src="images/book.webp" alt="Book">
@@ -54,17 +60,13 @@
                     <img src="images/toaster.png" alt="Toaster">
                     <h2>Conveniences</h2>
                     <p>Take a look at a few machines that make life a little easier</p>
-                    <a href="conveniences.html">
-                        <button>Conveniences</button>
-                    </a>
+                    <a href="conveniences.html" class="button">Conveniences</a>
                 </article>
                 <article>
                     <img src="images/security-icon.jpg" alt="Security icon">
                     <h2>Security</h2>
                     <p>Discover a number of security features that is employed in the house</p>
-                    <a href="security.html">
-                        <button>Security</button>
-                    </a>
+                    <a href="security.html" class="button">Security</a>
                 </article>
             </section>
         </main>
