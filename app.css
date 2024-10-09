@@ -6,6 +6,7 @@
     --color1: #3A81FF;
     --color2: #B1E629;
     --grey: #D9D9D9;
+    --card-shadow: 1px 2px 5px rgba(0, 0, 0, .5);
 }
 
 * { 
@@ -17,8 +18,12 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-size: 2rem;
     font-family: 'Zilla Slab';
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
 }
 
 header {
@@ -62,10 +67,63 @@ header nav ul li a{
 
 p, li {
     font-family: 'Vazirmatn';
+    font-size: 1.2rem;
 }
 
 .active {
     color: var(--color2);
+}
+
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.thirds article {
+    width: 30%;
+}
+
+.cards article {
+    box-shadow: var(--card-shadow);
+    align-items: center;
+}
+
+.cards article img {
+    height: 50%;
+    width: 100%;
+}
+
+.cards article p,
+.cards article h2 {
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.cards article a.button {
+    background-color: var(--color1);
+    padding: .5em 1em;
+    border-style: none;
+    border-radius: 1em;
+    font-family: "Vazirmatn";
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
 }
 
 #hero {
@@ -92,16 +150,15 @@ main {
     flex-flow: column wrap;
     justify-content: space-between;
     align-items: center;
-    padding-top:2rem
 }
 
 main section {
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 #specs {
     display: flex;
-    width: 80%;
+    width: 85%;
     border-radius: 25px;
     background-color: var(--grey);
 }
@@ -117,8 +174,30 @@ main section {
     margin-left: 5%;
     width: 40%;
     justify-content: center;
-}
-
-#specs div h2 {
     text-align: center;
 }
+
+#specs h2, #specs p {
+    margin-bottom: 0;
+}
+
+#specs ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 0
+}
+
+#brain-banner {
+    display: flex;
+    background-color: var(--color1);
+    flex-wrap: nowrap row;
+    align-items: center;
+    width: 100%
+}
+
+#info-cards article {
+    background-color: black;
+    color: white;
+    font-family: ''
+}
+
