@@ -6,7 +6,7 @@
     --color1: #3A81FF;
     --color2: #B1E629;
     --grey: #D9D9D9;
-    --card-shadow: 1px 2px 5px rgba(0, 0, 0, .5);
+    --card-shadow: .5px 2px 5px rgba(0, 0, 0, .5);
 }
 
 * { 
@@ -19,6 +19,10 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Zilla Slab';
+}
+
+h2 {
+    font-size: 2em;
 }
 
 img {
@@ -80,7 +84,7 @@ header nav ul li a{
 
 p, li {
     font-family: 'Vazirmatn';
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .active {
@@ -90,13 +94,15 @@ p, li {
 
 .column {
     display: flex;
-    flex-direction: column;
+    flex-flow: column nowrap;
+    align-items: center;
 }
 
 .row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    max-width: 1280px;
 }
 
 .wrap {
@@ -128,12 +134,29 @@ p, li {
 .card.row img {
  width: 50%;
  border-radius: 20px;
- 
+}
+
+.card.row section {
+    width: 50%;
+    padding: 1em;
+    text-align: center;
+}
+
+.cards {
+    width: 90%;
+}
+
+.cards article {
+    display: flex;
+    flex-flow: column nowrap;
+    border-radius: 20px;
+    padding-bottom: 1em;
 }
 
 .cards article img {
     height: 50%;
     width: 100%;
+    border-radius: 20px;
 }
 
 .cards article p,
@@ -142,35 +165,57 @@ p, li {
     text-align: center;
 }
 
+.cards article div {
+    align-items: center;
+    justify-content: space-between;
+}
+
 .cards article a.button {
     background-color: var(--color1);
     padding: .5em 1em;
-    border-style: none;
     border-radius: 1em;
     font-family: "Vazirmatn";
     font-size: 1.5rem;
     cursor: pointer;
     text-decoration: none;
     color: black;
+    width: 90%;
+    text-align: center;
 }
 
-#hero {
+.hero {
     display: flex;
-    background-image: url('images/smart-house-hd.jfif');
-    background-attachment: fixed;
-    background-position: center;
+    flex-flow: column wrap;
+    background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
     justify-content: center;
     align-items: center;
+    height: 50vh;
+}
+
+.hero-header {
+    color: white;
+    font-family: 'Vazirmatn';
+    font-size: 4rem;
+    text-align: center;
+}
+
+.hero-content {
+    color: white;
+    font-family: 'Vazirmatn';
+    font-size: 2rem;
+    text-align: center;
+}
+
+#main-hero {
+    background-image: url('images/smart-house-hd.jfif');
     height: 80vh;
 }
 
-#hero-content {
-    color: white;
-    font-family: '';
-    font-size: 4rem;
-    text-align: center;
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
 }
 
 main {
@@ -180,41 +225,29 @@ main {
     align-items: center;
 }
 
-main section, main div {
-    margin-top: 2rem;
+main > section, main > div {
+    margin-top: 5rem;
+}
+
+footer {
+    background-color: #D9D9D9;
+    margin-top: 5em;
 }
 
 #specs {
-    display: flex;
     width: 85%;
     background-color: var(--grey);
 }
 
-#specs div {
-    width: 50%;
-    border-radius: 25px;
+#specs ul {
+    list-style: none;
 }
 
-#specs section {
-    display: flex;
-    flex-flow: column nowrap;
-    width: 40%;
-    justify-content: center;
-    text-align: center;
-}
-
-#specs h2, #specs p {
+#specs p {
     margin-bottom: 0;
 }
 
-#specs ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 0
-}
-
 #brain-banner {
-    display: flex;
     background-color: var(--color1);
     align-items: center;
 }
