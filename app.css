@@ -3,9 +3,11 @@
 @import url('https://fonts.googleapis.com/css?family=Zilla Slab');
 
 :root {
-    --color1: #3A81FF;
-    --color2: #B1E629;
-    --grey: #D9D9D9;
+    --color1: #3a82ff;
+    --color1-light: #3a82ff50;
+    --color2: #b0e629;
+    --color2-light: #b0e62950;
+    --grey: #d9d9d9;
     --card-shadow: .5px 2px 5px rgba(0, 0, 0, .5);
 }
 
@@ -28,6 +30,26 @@ h2 {
 img {
     max-width: 100%;
     object-fit:cover;
+}
+
+.color1 {
+    background-color: var(--color1);
+}
+
+.color1-light {
+    background-color: var(--color1-light);
+}
+
+.color2 {
+    background-color: var(--color2);
+}
+
+.color2-light {
+    background-color: var(--color2-light);
+}
+
+.grey {
+    background-color: var(--grey);
 }
 
 header {
@@ -87,6 +109,10 @@ p, li {
     font-size: 1.5rem;
 }
 
+.shadow {
+    box-shadow: var(--card-shadow);
+}
+
 .active {
     color: var(--color2);
 }
@@ -103,6 +129,10 @@ p, li {
     flex-direction: row;
     justify-content: space-between;
     max-width: 1280px;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
 }
 
 .wrap {
@@ -129,7 +159,22 @@ p, li {
 .card {
     box-shadow: var(--card-shadow);
     border-radius: 20px;
+    width: 80%
 }
+
+.box {
+    background-color: var(--color1-light);
+    border: solid black 1px;
+    box-shadow: var(--card-shadow);
+    width: 80%;
+    padding: 1em;
+    align-items: flex-start;
+}
+
+.box h2 {
+    align-self: center;
+}
+
 
 .card.row img {
  width: 50%;
@@ -137,9 +182,12 @@ p, li {
 }
 
 .card.row section {
+    display: flex;
+    flex-flow: column wrap;
     width: 50%;
     padding: 1em;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .cards {
@@ -151,6 +199,7 @@ p, li {
     flex-flow: column nowrap;
     border-radius: 20px;
     padding-bottom: 1em;
+    height: 70vh;
 }
 
 .cards article img {
@@ -165,9 +214,14 @@ p, li {
     text-align: center;
 }
 
+.cards article h2 {
+    margin-bottom: 0;
+}
+
 .cards article div {
     align-items: center;
     justify-content: space-between;
+    height: 50%;
 }
 
 .cards article a.button {
@@ -187,8 +241,6 @@ p, li {
     display: flex;
     flex-flow: column wrap;
     background-color: black;
-    background-repeat: no-repeat;
-    background-size: cover;
     justify-content: center;
     align-items: center;
     height: 50vh;
@@ -199,6 +251,7 @@ p, li {
     font-family: 'Vazirmatn';
     font-size: 4rem;
     text-align: center;
+    margin-bottom: 0;
 }
 
 .hero-content {
@@ -206,6 +259,8 @@ p, li {
     font-family: 'Vazirmatn';
     font-size: 2rem;
     text-align: center;
+    width: 20em;
+    margin-top: 0;
 }
 
 #main-hero {
@@ -216,6 +271,8 @@ p, li {
 .parallax {
     background-attachment: fixed;
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 main {
@@ -241,6 +298,7 @@ footer {
 
 #specs ul {
     list-style: none;
+    padding: 0;
 }
 
 #specs p {
@@ -258,3 +316,26 @@ footer {
     font-family: ''
 }
 
+#conveniences .card.row {
+    box-shadow: none;
+}
+
+#conveniences .card.row img {
+    box-shadow: var(--card-shadow);
+    height: 30em;
+}
+
+#fireplace {
+    background-image: url("images/fireplace.jpg");
+    width: 100%;
+    color: white;
+    justify-content: center;
+    padding: 5em;
+}
+
+#fireplace section {
+    background-color: #00000074;
+    border-radius: 20px;
+    width: 50%;
+    text-align: center;
+}
