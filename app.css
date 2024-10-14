@@ -151,6 +151,10 @@ p, li {
     width: 30%;
 }
 
+.halves article {
+    width: 45%;
+}
+
 .cards article {
     box-shadow: var(--card-shadow);
     align-items: center;
@@ -197,6 +201,7 @@ p, li {
 .cards article {
     display: flex;
     flex-flow: column nowrap;
+    align-items: center;
     border-radius: 20px;
     padding-bottom: 1em;
     height: 70vh;
@@ -220,7 +225,7 @@ p, li {
 
 .cards article div {
     align-items: center;
-    justify-content: space-between;
+    justify-content:space-around;
     height: 50%;
 }
 
@@ -338,4 +343,8 @@ footer {
     border-radius: 20px;
     width: 50%;
     text-align: center;
+}
+
+#security .cards article {
+    height: calc(100em - 40vw);
 }
