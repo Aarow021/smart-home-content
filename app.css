@@ -163,7 +163,7 @@ p, li {
 .card {
     box-shadow: var(--card-shadow);
     border-radius: 20px;
-    width: 80%
+    width: 80%;
 }
 
 .box {
@@ -296,6 +296,10 @@ footer {
     margin-top: 5em;
 }
 
+footer #bottom a {
+    text-decoration: none;
+}
+
 #specs {
     width: 85%;
     background-color: var(--grey);
@@ -318,16 +322,22 @@ footer {
 #info-cards article {
     background-color: black;
     color: white;
-    font-family: ''
+    font-family: '';
 }
 
-#conveniences .card.row {
+#conveniences .card.row,
+#security .card.row
+{
     box-shadow: none;
 }
 
 #conveniences .card.row img {
     box-shadow: var(--card-shadow);
     height: 30em;
+}
+
+#security .card.row img {
+    box-shadow: var(--card-shadow);
 }
 
 #fireplace {
@@ -348,3 +358,5 @@ footer {
 #security .cards article {
     height: calc(100em - 40vw);
 }
+
+
